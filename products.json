@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Yamaha R1",
+    "price": 15000,
+    "image": "YZF R1.jpeg"
+  },
+  {
+    "id": 2,
+    "name": "Ducati Panigale V4",
+    "price": 22000,
+    "image": "pv4.jpeg"
+  },
+  {
+    "id": 3,
+    "name": "BMW S1000RR",
+    "price": 18000,
+    "image":"BMW S 1000 RR.jpeg"
+  },
+  {
+    "id": 4,
+    "name": "Kawasaki ZX-10R",
+    "price": 16000,
+    "image": "10r.jpeg"
+  }
+]

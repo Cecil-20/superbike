@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superbike Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="SBH.png" type="image/x-icon">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="primary-nav">
+            <div class="logo">
+                <img  src="logo.jpeg" alt="SBH">
+               <!-- <span class="tagline">Feeling stressed? Twist the throttle.</span>-->
+                <h1>RiDe CuLtUrE</h1>
+            </div>
+                    <!-- Search Box HTML -->
+                <form class="search-form">
+                    <input type="text" placeholder="Search bikes..." class="search-box">
+                    <button type="submit" class="search-btn">🔍</button>
+                </form>
+
+            <ul class="nav-links">
+                <li><a href="#brands">Brands</a></li>
+                <li><a href="#featured">Featured Bikes</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="login.html" class="login-btn" id="login">Login</a></li>
+            </ul>
+
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <nav class ="secondary-nav">
+            <ul>
+                <li><a href="yamaha.html">Yamaha</a></li>
+                <li><a href="kawasaki.html">Kawasaki</a></li>
+                <li><a href="ducati.html">Ducati</a></li>
+                <li><a href="suzuki.html">Suzuki</a></li>
+                <li><a href="honda.html">Honda</a></li>
+                <li><a href="bmw.html">BMW</a></li>
+                <li><a href="aprilia.html">Aprilia</a></li>
+                <li><a href="ktm.html">kTm</a></li>
+                <li><a href="agusta.html">MV Agusta</a></li>
+                <li><a href="triumph.html">Triumph</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+       <!-- Hero Section with Background Video -->
+<section class="hero">
+    <video autoplay loop muted playsinline class="background-video">
+        <source src="Background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="hero-content">
+        <h2>Experience Speed, Power & Precision</h2>
+        <p>Discover the best superbikes from all top brands</p>
+        <a href="#featured" class="btn">Explore Now</a>
+    </div>
+</section>
+
+
+        <!-- Brands Section -->
+        <section id="brands" class="brands">
+            <h2>Top Superbike Brands</h2>
+            <div class="brand-logos">
+                <img src="yamaha.jpeg" alt="Yamaha">
+                <img src="kawasaki.jpeg" alt="Kawasaki">
+                <img src="ducati.jpeg" alt="Ducati">
+                <img src="suzuki.jpeg" alt="Suzuki">
+                <img src="hondas.jpg" alt="Honda">
+                <img src="bmw.jpeg" alt="BMW">
+                <img src="Aprilia.jpeg" alt="Aprilia">
+                <img src="kTm.jpeg" alt="KTM">
+                <img src="MV Agusta.jpeg" alt="MV Agusta">
+                <img src="Triumph.jpeg" alt="Triumph">
+            </div>
+        </section>
+
+        <!-- Featured Bikes Section -->
+        <section id="featured" class="featured">
+            <h2>Featured Superbikes</h2>
+            <div class="bike-list">
+                <div class="bike">
+                    <img src="YZF R1.jpeg" alt="Yamaha R1">
+                    <h3>Yamaha R1</h3>
+                    <p>998cc, 200 HP, top speed 186 mph</p>
+                </div>
+                <div class="bike">
+                    <img src="Ducati P V4.jpeg" alt="Ducati Panigale V4">
+                    <h3>Ducati Panigale V4</h3>
+                    <p>1103cc, 214 HP, top speed 198 mph</p>
+                </div>
+                <div class="bike">
+                    <img src="Kawasaki H2.jpeg" alt="Kawasaki H2">
+                    <h3>Kawasaki Ninja H2</h3>
+                    <p>998cc, 228 HP, top speed 209 mph</p>
+                </div>
+                <div class="bike" id="zx-10 r">
+                    <img src="10r.jpeg" alt="Ninja ZX-10R">
+                    <h3>Kawasaki Ninja ZX-10R</h3>
+                    <p>998cc, 203 HP, top speed 186 mph</p>
+                </div>
+                <div class="bike">
+                    <img src="Suzuki GSX-R1000.jpeg" alt="Suzuki GSX-R1000">
+                    <h3>Suzuki GSX-R1000</h3>
+                    <p>999cc, 202 HP, top speed 173 mph</p>
+                </div>
+                <div class="bike">
+                    <img src="BMW S 1000 RR.jpeg" alt="BMW S 1000 RR">
+                    <h3>BMW S 1000 RR</h3>
+                    <p>999cc, 210 HP, top speed 188 mph</p>
+                </div>
+                <div class="bike">
+                    <img src="CBR1000RR-R Fireblade SP.avif" alt="CBR1000RR-R Fireblade SP">
+                    <h3>Honda CBR1000RR-R Fireblade SP</h3>
+                    <p>1000cc, 214 HP, top speed 189 mph</p>
+                </div>
+                <div class="bike" id="rsv4">
+                    <img src="rsv4.jpeg" alt="RSV4 1100">
+                    <h3>Aprilia RSV4 1100</h3>
+                    <p>1099 cc, 217 HP, top speed 190 mph</p>
+                </div>
+                <div class="bike" id="rc16">
+                    <img src="rc16.jpeg" alt="RC 16">
+                    <h3>kTm RC 16</h3>
+                    <p>1000 cc, 280 HP, top speed 217+ mph</p>
+                </div>
+                <div class="bike" id="f4rc">
+                    <img src="f4rc.jpeg" alt="Agusta F4 RC">
+                    <h3>MV Agusta F4 RC</h3>
+                    <p>998 cc, 212 HP, top speed 190 mph</p>
+                </div>
+                <div class="bike" id="st1200rs">
+                    <img src="st1200rs.jpeg" alt="Speed Triple 1200 RS">
+                    <h3>Triumph Speed Triple 1200 RS</h3>
+                    <p>1160 cc, 180 HP, top speed 168 mph</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <h2>Get in Touch</h2>
+            <p>Interested in a superbike? Contact us for more details.</p>
+            <form>
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <textarea placeholder="Your Message"></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
+
+        <footer>
+            <div class="social-icons">
+                <a href="#" class="icon facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a4 4 0 0 0-4 4v3H7v4h4v8h4v-8h3l1-4h-4V6a1 1 0 0 1 1-1h3z"/>
+                    </svg>
+                </a>
+                <a href="#" class="icon instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <!-- Background Gradient -->
+                        <defs>
+                            <linearGradient id="instaGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#F58529"/>
+                                <stop offset="30%" stop-color="#DD2A7B"/>
+                                <stop offset="60%" stop-color="#8134AF"/>
+                                <stop offset="100%" stop-color="#515BD4"/>
+                            </linearGradient>
+                        </defs>
+                        <!-- Camera Body -->
+                        <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5z"
+                              stroke="url(#instaGradient)" stroke-width="2" fill="none"/>
+                        <!-- Camera Lens -->
+                        <circle cx="12" cy="12" r="4" stroke="url(#instaGradient)" stroke-width="2" fill="none"/>
+                        <!-- Flash Dot -->
+                        <circle cx="18" cy="6" r="1.5" fill="url(#instaGradient)"/>
+                    </svg>
+                </a>             
+                <a href="#" class="icon twitter">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 16 2a4.48 4.48 0 0 0-4.47 5.36A12.94 12.94 0 0 1 3 4s-4 9 5 13a13.37 13.37 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A10.5 10.5 0 0 0 23 3z"/>
+                    </svg>
+                </a>
+                <a href="#" class="icon linkedin">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-14h4v2"/>
+                        <rect x="2" y="9" width="4" height="12"/>
+                        <circle cx="4" cy="4" r="2"/>
+                    </svg>
+                </a>
+            </div>
+            <p class="footer-text">© 2025 Superbike Hub | All rights reserved.</p>
+        </footer>
+        
+    
+        
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

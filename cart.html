@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Superbike Hub - Cart</title>
+  <link rel="stylesheet" href="cart.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <!-- ====== HEADER ====== -->
+    <header>
+      <nav class="primary-nav">
+        <div class="logo">
+          <img src="logo.jpeg" alt="SBH Logo" />
+          <h1>RiDe CuLtUrE</h1>
+        </div>
+      </nav>
+
+      <nav class="secondary-nav">
+        <ul>
+          <li><a href="yamaha.html">Yamaha</a></li>
+          <li><a href="kawasaki.html">Kawasaki</a></li>
+          <li><a href="ducati.html">Ducati</a></li>
+          <li><a href="suzuki.html">Suzuki</a></li>
+          <li><a href="honda.html">Honda</a></li>
+          <li><a href="bmw.html">BMW</a></li>
+          <li><a href="aprilia.html">Aprilia</a></li>
+          <li><a href="ktm.html">KTM</a></li>
+          <li><a href="agusta.html">MV Agusta</a></li>
+          <li><a href="triumph.html">Triumph</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ====== MAIN CONTENT ====== -->
+    <main>
+      <h1>🛒 Superbike Hub Cart</h1>
+
+      <!-- 🔹 Dynamic Product Section with Loading Spinner -->
+      <section class="product-list" id="product-list">
+        <div class="loader fade-in" id="loader">
+          <div class="spinner"></div>
+          <p>Loading products...</p>
+        </div>
+      </section>
+
+      <!-- 🔹 Cart Section -->
+      <div class="cart-container" id="cart-panel">
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <div class="cart-summary">
+          <p id="cart-total">Total: $0.00</p>
+          <div class="cart-actions">
+            <button onclick="clearCart()" class="clear-btn">Clear Cart</button>
+            <button onclick="checkout()" class="checkout-btn">Checkout</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- ====== FOOTER ====== -->
+    <footer>
+      <div class="social-icons">
+        <a href="#" class="icon facebook">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M18 2h-3a4 4 0 0 0-4 4v3H7v4h4v8h4v-8h3l1-4h-4V6a1 1 0 0 1 1-1h3z"/>
+          </svg>
+        </a>
+
+        <a href="#" class="icon instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <defs>
+              <linearGradient id="instaGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#F58529"/>
+                <stop offset="30%" stop-color="#DD2A7B"/>
+                <stop offset="60%" stop-color="#8134AF"/>
+                <stop offset="100%" stop-color="#515BD4"/>
+              </linearGradient>
+            </defs>
+            <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5z"
+              stroke="url(#instaGradient)" stroke-width="2" fill="none"/>
+            <circle cx="12" cy="12" r="4" stroke="url(#instaGradient)" stroke-width="2" fill="none"/>
+            <circle cx="18" cy="6" r="1.5" fill="url(#instaGradient)"/>
+          </svg>
+        </a>             
+      </div>
+      <p class="footer-text">© 2025 Superbike Hub | All rights reserved.</p>
+    </footer>
+  </div>
+
+  <!-- ====== SCRIPT ====== -->
+  <script src="cart.js"></script>
+</body>
+</html>

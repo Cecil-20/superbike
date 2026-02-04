@@ -1,0 +1,461 @@
+/* General Styles */
+body {
+    background: #888;
+    color: #f5f2f1;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    font-family: cursive;
+    color: white;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.primary-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 3px solid #4CAF50; /* Green underline */
+}
+
+/* Container for search box */
+.search-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Transparent Search Box */
+.search-box {
+    padding: 10px;
+    width: 250px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 2px solid #555;
+    font-size: 1rem;
+    color: whitesmoke;
+    transition: border-color 0.3s ease;
+}
+
+/* Placeholder Style */
+.search-box::placeholder {
+    color: white;
+    opacity: 0.7;
+}
+
+/* On Focus */
+.search-box:focus {
+    border-bottom: 2px solid #000;
+}
+
+/* Search Button */
+.search-btn {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Hover Effect */
+.search-btn:hover {
+    background-color: #555;
+}
+
+
+.login-btn {
+    padding: 5px 15px;
+    background: blue;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: lighter;
+    border-radius: 50px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Hover Effect for Login Button */
+.login-btn:hover {
+    background: green;
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 50px;
+    margin-right: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover Effect for Navigation Links */
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #ff6600;
+    bottom: -5px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ff6600;
+    transform: translateY(-3px);
+}
+
+.nav-links a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+/* Secondary Navigation Styles */
+.secondary-nav {
+    background-color: #2E8B57; /* Greenish background */
+    padding: 10px 0;
+    text-align: center;
+}
+
+.secondary-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.secondary-nav ul li {
+    display: inline-block;
+    margin: 5px 10px;
+}
+
+.secondary-nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+/* Hover Effect */
+.secondary-nav ul li a:hover {
+    background-color: #1E6F43; /* Darker green */
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .secondary-nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .secondary-nav ul li {
+        margin: 5px;
+    }
+}
+
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    width: 50ch;
+    font-family: monospace;
+    text-wrap: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(100) infinite alternate-reverse;
+}
+@keyframes typing{
+    from{
+        width: 0ch;
+    }
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+/* Hero Section with Background Video */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Background Video */
+.background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+/* Dark Overlay to Improve Readability */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 0;
+}
+
+/* Hero Content (Text & Button) */
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+
+.btn {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #f5f2f1;
+    color: #ff6600;
+    transform: translateY(-3px);
+}
+
+.brands, .featured, .contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.brand-logos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.brand-logos img {
+    max-width: 90px;
+    max-height: 90px;
+    margin: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+
+/* Hover Effect for Brand Logos */
+.brand-logos img:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 10px rgba(255, 102, 0, 0.7));
+}
+
+.bike-list {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.bike {
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bike img {
+    max-width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effect for Featured Bikes */
+.bike:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(150, 36, 36, 0.2);
+}
+
+.bike:hover img {
+    transform: scale(1.05);
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact input, .contact textarea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+
+/* Footer Styling */
+footer {
+    background: #222; /* Darker background for contrast */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Social Icons Container */
+footer .social-icons {
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+/* Icon Styling */
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* SVG Icon Styling */
+.icon svg {
+    width: 30px;
+    height: 30px;
+    fill: white;
+    transition: fill 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover Effects */
+.icon:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+}
+
+.icon:hover svg {
+    transform: rotate(360deg);
+}
+
+/* Individual Icon Colors on Hover */
+.facebook:hover { background: #4267B2; }
+.instagram:hover { background: #E1306C; }
+.twitter:hover { background: #1DA1F2; }
+.linkedin:hover { background: #0077B5; }
+
+/* Instagram Icon Special Animation */
+.instagram svg {
+    transition: transform 0.4s ease-in-out, filter 0.4s ease-in-out;
+}
+
+/* Hover Effect: Rotates and Glows */
+.instagram:hover svg {
+    transform: rotate(15deg) scale(1.2);
+    filter: drop-shadow(0px 0px 8px rgba(255, 165, 0, 0.8));
+}
+
+/* Floating Animation */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0px); }
+}
+
+.icon {
+    animation: float 2s infinite ease-in-out;
+}
+
+/* Footer Text Styling */
+.footer-text {
+    text-align: center;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+

@@ -1,0 +1,181 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: #333;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container Styling */
+.signup-container {
+    background: #555;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    width: 400px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Form Box */
+.form-box h2 {
+    margin-bottom: 20px;
+    color: #f1ebeb;
+}
+
+/* Input Group */
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
+    font-size: 1rem;
+}
+
+.input-group input:focus {
+    border-color: #6a11cb;
+    box-shadow: 0 0 10px rgba(106, 17, 203, 0.2);
+}
+
+/* Floating Label */
+.input-group label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #aaa;
+    font-size: 0.9rem;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label {
+    top: -10px;
+    left: 10px;
+    font-size: 0.75rem;
+    color: #f1ebeb;
+}
+
+/* Button Styling */
+.btn {
+    background: linear-gradient(145deg, #6a11cb, #2575fc);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: 0.3s;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: linear-gradient(145deg, #2575fc, #6a11cb);
+    box-shadow: 0 5px 15px rgba(106, 17, 203, 0.3);
+}
+
+/* Redirect Text */
+.redirect-text {
+    margin-top: 15px;
+    color: #f1ebeb;
+}
+
+.redirect-text a {
+    color: #f1ebeb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.redirect-text a:hover {
+    text-decoration: underline;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Alert Box Styles */
+.alert {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 20px;
+    background-color: #f8d7da;
+    color: #721c24;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    opacity: 0.95;
+    animation: slideDown 0.3s ease;
+}
+
+/* Success Alert */
+.alert.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+/* Slide Down Animation */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Button-like Anchor Tag */
+.login-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: linear-gradient(145deg, #6a11cb, #2575fc);
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.login-btn:hover {
+    background: linear-gradient(145deg, #2575fc, #6a11cb);
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Active (Click) Effect */
+.login-btn:active {
+    transform: translateY(2px);
+    box-shadow: none;
+}
